@@ -1,0 +1,6 @@
+Pygame-Learning-Environment/
+ppo_flappybird_tensorboard/
+
+**/__pycache__/
+
+*.zip
