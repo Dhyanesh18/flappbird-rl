@@ -70,11 +70,19 @@ class FlappyBirdGymEnv(gym.Env):
         processed = self.preprocess(frame)
         self.frames.append(processed)
 
+        # living bonus:
+        reward += 0.1
+
+        # larger penalty for crashing
+        if done:
+            reward -= 5
+
         obs = np.array(self.frames, dtype=np.uint8)
         terminated = done
-        truncated = False  # No time-based truncation logic
+        truncated = False
 
         return obs, reward, terminated, truncated, {}
+
 
     def render(self):
         self.env.display_screen = True
