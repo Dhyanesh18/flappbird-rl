@@ -1,12 +1,12 @@
-from stable_baselines3 import PPO
+from stable_baselines3 import A2C
 from flappy_gym_env import FlappyBirdGymEnv
 import time
 
 # Create environment
 env = FlappyBirdGymEnv(display_screen=True)
 
-# Load the trained model
-model = PPO.load("ppo_flappybird1")
+# Load the trained A2C model
+model = A2C.load("a2c_flappybird")  # Saved A2C model filename
 
 # Reset the environment
 obs, _ = env.reset()
