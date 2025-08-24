@@ -1,4 +1,4 @@
-# FlappyBirdRL 🐦
+# FlappyBirdRL
 
 A Reinforcement Learning (RL) agent that learns to play Flappy Bird using **Stable Baselines3** and a custom **OpenAI Gym** environment.
 
@@ -22,17 +22,17 @@ This project demonstrates **deep RL** for an arcade-style game, with PPO/A2C and
 - The config in the code files are what were used to get the best results.  
 - Sadly, hyperparameter tuning wasn't possible and mostly intuition based tuning was done as the training of an agent for 10M timesteps took 19.2 Hrs.
 
-## 📌 Project Highlights
+## Project Highlights
 
-- 🧠 **Algorithms:** PPO & A2C from Stable Baselines3
-- 🎮 **Custom Gym Env:** Pixel-based Flappy Bird with frame skipping & stacking
-- 🔬 **Entropy Annealing:** Controls exploration dynamically
-- 📊 **TensorBoard:** Visualize training progress
-- 🚀 **GPU Acceleration:** CUDA enabled
+- **Algorithms:** PPO & A2C from Stable Baselines3
+- **Custom Gym Env:** Pixel-based Flappy Bird with frame skipping & stacking
+- **Entropy Annealing:** Controls exploration dynamically
+- **TensorBoard:** Visualize training progress
+- **GPU Acceleration:** CUDA enabled
 
 ---
 
-## 📂 Directory Structure
+## Directory Structure
 
 FlappyBirdRL/  
 │  
@@ -48,7 +48,7 @@ FlappyBirdRL/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 1. **Clone the repo**
    ```
@@ -87,7 +87,7 @@ Edit train_ppo.py or train_a2c.py to tweak hyperparameters:
 
     Total timesteps
 
-## 📈 Monitor Training
+## Monitor Training
   ```
   tensorboard --logdir ppo_flappybird_tensorboard/
   ```
